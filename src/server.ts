@@ -49,6 +49,5 @@ export class Server extends EE<Events> {
             this.emit("connect", client);
             return response;
         });
-        console.log(this.server);
     }
 }
