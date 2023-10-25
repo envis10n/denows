@@ -11,6 +11,7 @@
     "imports": {
         "@std/": "https://deno.land/std@0.204.0/",
         "@x/": "https://deno.land/x/",
-        "@log": "https://deno.land/std@0.204.0/log/mod.ts"
+        "@log": "https://deno.land/std@0.204.0/log/mod.ts",
+        "@eets": "https://deno.land/x/ee_ts@1.0.0/mod.ts"
     }
 }
