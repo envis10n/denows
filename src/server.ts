@@ -22,6 +22,9 @@ export class Server extends EE<Events> {
     }
     public async close(): Promise<void> {
         await this.server?.shutdown();
+        for (const client of this.clients.values()) {
+            client.close(1005, "Shutdown");
+        }
         this.clients.clear();
     }
     public listen(): void {
